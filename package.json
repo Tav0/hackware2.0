@@ -1,12 +1,12 @@
 {
-  "name": "icxmedia",
+  "name": "HackWare",
   "version": "1.0.0",
-  "description": "engineering test",
+  "description": "HackWare website",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Luis",
+  "author": "Luis & Jeroen",
   "license": "",
   "dependencies": {
     "express": "^4.12.4",

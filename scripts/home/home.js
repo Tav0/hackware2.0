@@ -4,7 +4,7 @@
 	.config(function($stateProvider){
 
 		var home = {
-			url: '/site',
+			url: '/',
 			views: {
 				'main@home' : {
 					controller : 'homeCtrl',

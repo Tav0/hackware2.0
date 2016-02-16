@@ -33,7 +33,10 @@
 		'ui.router',
 		'ui.bootstrap',
 		'home',
-		'about'
+		'about',
+		'faq',
+		'rental',
+		'contact'
 	]).config([
 		'$stateProvider', '$urlRouterProvider', '$locationProvider', '$httpProvider',
 		'$uiViewScrollProvider', startup]);
