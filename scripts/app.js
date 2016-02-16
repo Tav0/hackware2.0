@@ -2,7 +2,7 @@
 	'use strict';
 
 	function startup($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider,$uiViewScrollProvider) {
-		$urlRouterProvider.otherwise('/site'); // default route points to the MAIN module.
+		$urlRouterProvider.otherwise('/'); // default route points to the MAIN module.
 		$httpProvider.defaults.useXDomain = true;
 		$httpProvider.defaults.withCredentials = true;
 		$httpProvider.defaults.transformRequest = function (data) {
@@ -24,6 +24,23 @@
 		};
 
 		$stateProvider.state('home', index);
+
+		//$stateProvider
+		//	.state('home', {
+		//		url: "/",
+		//		abstract: true,
+		//		templateUrl: "scripts/common/partials/skeleton.html",
+		//		controller: 'homeCtrl'
+		//	})
+		//	.state('home.faq', {
+		//		url: "/faq",
+		//		views: {
+		//			'menuContent': {
+		//				templateUrl: "scripts/faq/partials/faq.html",
+		//				controller: "faqCtrl"
+		//			}
+		//		}
+		//	})
 	}
 
 	angular.module('board', [

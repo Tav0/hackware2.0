@@ -4,6 +4,6 @@
 	homeCtrl.$inject = ['$scope'];
 
 	function homeCtrl($scope){
-		$scope.site = "Hackware";
+		$scope.site = "HackWare";
 	}
 }());
