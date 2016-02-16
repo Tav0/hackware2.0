@@ -1,0 +1,17 @@
+{
+  "name": "icxmedia",
+  "version": "1.0.0",
+  "description": "engineering test",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis",
+  "license": "",
+  "dependencies": {
+    "express": "^4.12.4",
+    "body-parser": "^1.12.4",
+    "errorhandler": "^1.0.0",
+    "method-override": "^1.0.0"
+  }
+}

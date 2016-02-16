@@ -1,0 +1,37 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-offset-4 col-sm-4 text-center">
+			<button type="button" class="btn btn-default" aria-label="Faq">
+				<span class="glyphicon glyphicon-triangle-top" aria-hidden="true">
+					<a ui-sref="access.faq"></a>
+				</span>
+			</button>
+		</div>
+		<div class="col-sm-12">
+			<div class="col-sm-4 text-center">
+				<a ui-sref="home.about"> 
+					<button type="button" class="btn btn-default" aria-label="About">
+						<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+					</button>
+				</a>
+			</div>
+			<div class="col-sm-4 text-center">
+				<p>{{site}}</p>
+			</div>
+			<div class="col-sm-4 text-center">
+				<button type="button" class="btn btn-default" aria-label="Hardware">
+					<span class="glyphicon glyphicon-triangle-right" aria-hidden="true">
+						<a ui-sref="access.hardware"></a>
+					</span>
+				</button>
+			</div>
+		</div>
+		<div class="col-sm-offset-4 col-sm-4 text-center">
+			<button type="button" class="btn btn-default" aria-label="Contact">
+				<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true">
+					<a ui-sref="access.contact"></a>
+				</span>
+			</button>
+		</div>
+	</div>
+</div>

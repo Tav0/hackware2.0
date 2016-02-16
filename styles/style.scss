@@ -1,0 +1,33 @@
+$typekit: "futura-pt", sans-serif;
+$typekit-text:"neuzeit-grotesk", sans-serif;
+
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+$main: #00afec;
+$baseline: #505050;
+$subdued: #ababab;
+$highlight3: #dcdcdc;
+$highlight2: #000;
+$highlight1: #999;
+$hover:#eaeaea;
+$success:#549431;
+
+// overrides the bootstrap variables
+$popover-arrow-color: #000 !default;
+$popover-bg:                          #000 !default;
+$popover-border-color:                rgba(0,0,0,0) !default;
+$popover-fallback-border-color:       rgba(0,0,0,0) !default;
+
+@import "compass";
+@import "compass/layout";
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
+
+//Make sure to reference .css files with their file name
+
+@import "sass/partials/baseline";
+@import "sass/partials/common";
+@import "sass/partials/glyphicons";
+@import "sass/partials/socialglyphs";
+@import "sass/partials/auth";

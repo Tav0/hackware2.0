@@ -1,0 +1,334 @@
+html, body {
+    font-family: $typekit-text;
+    margin:0;
+    font-size:14px;
+    background-color:#fff;
+    color:#505050;
+    overflow-x:hidden;
+	height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $typekit;
+    text-transform:uppercase;
+    font-weight: 600;
+    color:#9d9d9d;
+    margin:0;
+}
+
+p, div, input, textarea, select, label, button, .btn-default {
+    font-family: $typekit-text;
+    color: $baseline;
+    font-weight:100;
+}
+
+a {
+    cursor:pointer;
+}
+
+select {
+    text-transform: capitalize;
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+button.submit{
+    background-color:$main;
+    color:#fff;
+}
+
+button:focus {
+    outline:0 !important;
+}
+
+label {
+    font-size:.8em;
+    color: $subdued;
+    text-transform:uppercase;
+    font-weight:600;
+    margin:0;
+}
+
+label.navigation:hover{
+    color:$baseline;
+}
+.x15{
+    font-size:1.5em;
+    font-weight:100;
+}
+
+.x175 {
+    font-size:1.75em;
+    font-weight:100;
+}
+
+.x2 {
+    font-size:2em;
+    font-weight:100;
+}
+
+.x4 {
+    font-size:4em;
+}
+
+.x5 {
+    font-size:5em;
+}
+// TRANSITIONS
+    .def-trans-delay {
+        -webkit-transition: all .45s ease-in .05s;
+        -moz-transition: all .45s ease-in .05s;
+        -o-transition: all .45s ease-in .05s;
+        transition: all .45s ease-in .05s;
+    }
+
+    @mixin trans-ease($time) {
+        -webkit-transition: all $time ease;
+        -moz-transition: all $time ease;
+        -o-transition: all $time ease;
+        transition: all $time ease;
+    }
+
+    @mixin ani-ease($time) {
+        -webkit-animation: all $time ease;
+        -moz-animation: all $time ease;
+        -o-animation: all $time ease;
+        animation: all $time ease;
+    }
+
+    .ng-hide {
+        @include trans-ease(.4s);
+        opacity:0;
+    }
+
+    .ng-show {
+        @include trans-ease(.4s);
+        opacity:1;
+    }
+
+// BOOTSTRAP OVERRIDES
+.btn {
+    @include trans-ease(.3s);
+    text-transform:uppercase;
+}
+
+.popover {
+    z-index:11 !important;
+}
+
+.popover-content {
+    color:#ffffff;
+}
+
+.dropdown-menu {
+    li {
+        padding:5px;
+        cursor:pointer;
+    }
+
+    li:hover{
+        background:#eaeaea;
+    }
+}
+
+.dropdown-menu.search{
+    li {
+        padding:initial;
+    }
+}
+
+// end bootstrap overrides
+
+.pointer {
+    cursor:pointer;
+}
+
+.inline {
+    display:inline-block;
+}
+
+.relative {
+    position:relative;
+}
+
+.heavy {
+    font-weight:800;
+}
+
+.grey {
+    color:#9D9D9D;
+}
+
+div[class*="col-"] {
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.container-fluid, td, th {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+table {
+    width:100%;
+
+    tr {
+        th {
+
+        }
+    }
+}
+
+.row {
+    margin:0;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span,
+.pagination > .active > span:hover,
+.pagination > .active > span:focus {
+    background-color: $main;
+    border-color: $main;
+}
+
+.pagination > li > a, .pagination > li > span {
+    color: $main;
+}
+
+.white {
+    color:#fff;
+}
+
+.relative {
+    position:relative;
+}
+
+.inline {
+    display:inline-block;
+}
+
+.center-item{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.highlight {
+    color:$main;
+}
+
+.breadcrumb {
+    margin-bottom:0;
+    background-color:transparent;
+    padding:0;
+
+    li {
+        font-family: $typekit;
+        font-weight: 100;
+        text-transform: uppercase;
+        font-size:.8em;
+
+        a:link, a:visited, a:active {
+            color:$main;
+        }
+    }
+}
+
+input[type=file]{
+    height:0;
+    width:0;
+}
+
+.close {
+    font-size: 3em;
+}
+
+.close.submission {
+	    font-size: 2em;
+	}
+
+.square {
+    position: relative;
+    width: 50%;
+
+    .content {
+        position: absolute;
+    }
+}
+
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.breadcrumb > li {
+    + li:before {
+        content:  "/\00a0" !important;
+    }
+}
+
+input.ng-invalid, select.ng-invalid {
+    border-right: 3px solid red;
+}
+
+tags-input .tags .tag-item {
+	text-transform: capitalize;
+	font: 1.1em "neuzeit-grotesk", sans-seriff !important;
+	background: #00AFEC !important;
+	padding: 7px !important;
+	padding-top: 3px !important;
+}
+
+tags-input .tags .input {
+	font: 1.1em "neuzeit-grotesk", sans-seriff !important;
+}
+
+tags-input .tags {
+	box-shadow: 0 0 0 0 !important;
+	border-color: #eaeaea !important;
+	padding: 5px !important;
+}
+
+tags-input.ng-invalid .tags {
+	border-right: 3px solid red !important;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 6px rgb(255, 255, 255) !important;
+	border-left: 1px solid #a9a9a9 !important;
+	border-top: 1px solid #a9a9a9 !important;
+	border-bottom: 1px solid #a9a9a9 !important;
+	border-right: 3px solid red !important;
+}
+
+tags-input.ng-invalid .tags .input {
+	margin: 0 !important;
+	width: 130px !important;
+}
+
+tags-input .autocomplete {
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.suggestion-item {
+	text-transform: capitalize;
+	font: 1.1em "neuzeit-grotesk", sans-seriff !important;
+	color: #ababab !important;
+}
+
+.suggestion-item:hover {
+	color: #fff !important;
+}
+
+.suggestion-item.selected {
+	color: #fff !important;
+}
+
+.no-break {
+    word-break: normal !important;
+}
