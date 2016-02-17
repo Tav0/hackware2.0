@@ -25,24 +25,6 @@
 
 		$stateProvider.state('home', index);
 
-		//$stateProvider
-		//	.state('home', {
-		//		url: "/",
-		//		abstract: true,
-		//		templateUrl: "scripts/common/partials/skeleton.html",
-		//		controller: 'homeCtrl'
-		//	})
-		//	.state('home.faq', {
-		//		url: "/faq",
-		//		views: {
-		//			'menuContent': {
-		//				templateUrl: "scripts/faq/partials/faq.html",
-		//				controller: "faqCtrl"
-		//			}
-		//		}
-		//	})
-	}
-
 	angular.module('board', [
 		'ngCookies',
 		'ngAnimate',
