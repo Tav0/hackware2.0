@@ -24,6 +24,7 @@
 		};
 
 		$stateProvider.state('home', index);
+	}
 
 	angular.module('board', [
 		'ngCookies',
@@ -34,7 +35,7 @@
 		'home',
 		'about',
 		'faq',
-		'rental',
+		'inventory',
 		'contact'
 	]).config([
 		'$stateProvider', '$urlRouterProvider', '$locationProvider', '$httpProvider',
