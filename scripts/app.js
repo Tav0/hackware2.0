@@ -26,7 +26,7 @@
 		$stateProvider.state('home', index);
 	}
 
-	angular.module('board', [
+	angular.module('hackware', [
 		'ngCookies',
 		'ngAnimate',
 		'viewhead',
