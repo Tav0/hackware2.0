@@ -1,7 +1,11 @@
 <div class="container-fluid">
-	<div class="col-sm-offset-4 col-sm-4 text-center">
-		<p>We distribute and provide support for <a href="http://hackalliance.io">HackAlliance.</a></p>
-		<br>
-		<a href="http://hackalliance.io"><button><img src="../../../images/raspberry_jam_logo.png"></button></a>
-	</div>
+    <div class="col-sm-offset-4 col-sm-4 text-center">
+
+        <p>We distribute and provide support for <a class="navLinkHcp" href="{{hcpurl}}" target="_self" ng-click="linkModelFunc(hcpurl)">HackAlliance</a>.
+            <br>
+            Take a look at their inventory to see what they have to offer.</p>
+        <br>
+        <a class="navLinkHcp" href="{{hcpurl}}" target="_self" ng-click="linkModelFunc(hcpurl)"><button>HackAlliance</button></a>
+        <!-- TODO still need to replace the raspberry pi logo with HackAlliance's logo-->
+    </div>
 </div>

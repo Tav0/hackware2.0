@@ -14,5 +14,7 @@
 		};
 
 		$stateProvider.state('home.inventory', inventory);
+
+
 	});
 }());
