@@ -24,26 +24,9 @@
 		};
 
 		$stateProvider.state('home', index);
-
-		//$stateProvider
-		//	.state('home', {
-		//		url: "/",
-		//		abstract: true,
-		//		templateUrl: "scripts/common/partials/skeleton.html",
-		//		controller: 'homeCtrl'
-		//	})
-		//	.state('home.faq', {
-		//		url: "/faq",
-		//		views: {
-		//			'menuContent': {
-		//				templateUrl: "scripts/faq/partials/faq.html",
-		//				controller: "faqCtrl"
-		//			}
-		//		}
-		//	})
 	}
 
-	angular.module('board', [
+	angular.module('hackware', [
 		'ngCookies',
 		'ngAnimate',
 		'viewhead',
@@ -52,7 +35,7 @@
 		'home',
 		'about',
 		'faq',
-		'rental',
+		'inventory',
 		'contact'
 	]).config([
 		'$stateProvider', '$urlRouterProvider', '$locationProvider', '$httpProvider',

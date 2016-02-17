@@ -14,7 +14,7 @@
                 return tmpConfig;
             }
 
-            angular.bootstrap(document, ['board']); // manually bootstrap the app after we get the config.
+            angular.bootstrap(document, ['hackware']); // manually bootstrap the app after we get the config.
         });
     });
 }());
