@@ -5,5 +5,7 @@
 
 	function aboutCtrl($scope){
 		$scope.about = "About";
+
+
 	}
 }());

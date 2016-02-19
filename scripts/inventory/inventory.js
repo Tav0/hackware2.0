@@ -13,7 +13,19 @@
 			}
 		};
 
+
+        var left = {
+            url: '/',
+            views: {
+                'main@home' : {
+                    controller : 'homeCtrl',
+                    templateUrl: 'scripts/home/partials/home.html'
+                }
+            }
+        };
+
 		$stateProvider.state('home.inventory', inventory);
+		$stateProvider.state('home.inventory.left', left);
 
 
 	});

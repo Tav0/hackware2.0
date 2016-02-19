@@ -13,6 +13,17 @@
 			}
 		};
 
+		var right = {
+			url: '/',
+			views: {
+				'main@home' : {
+					controller : 'homeCtrl',
+					templateUrl: 'scripts/home/partials/home.html'
+				}
+			}
+		};
+
 		$stateProvider.state('home.about', about);
+		$stateProvider.state('home.about.right',right);
 	});
 }());

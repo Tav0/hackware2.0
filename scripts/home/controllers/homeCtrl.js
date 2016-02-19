@@ -5,5 +5,6 @@
 
 	function homeCtrl($scope){
 		$scope.site = "HackWare";
+
 	}
 }());
