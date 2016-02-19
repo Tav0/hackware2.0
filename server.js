@@ -7,7 +7,7 @@
 			errorHandler   = require('errorhandler'),
 			methodOverride = require('method-override'),
 			hostname       = process.env.HOSTNAME || 'localhost',
-			port           = parseInt(process.env.PORT, 10) || 6969,
+			port           = parseInt(process.env.PORT, 10) || 7000,
 			publicDir      = process.argv[2] || __dirname + '/';
 
 	app.use(methodOverride());
