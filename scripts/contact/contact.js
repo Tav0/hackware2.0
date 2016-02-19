@@ -12,7 +12,18 @@
 				}
 			}
 		};
+        var up = {
+            url: '/',
+            views: {
+                'main@home' : {
+                    controller : 'homeCtrl',
+                    templateUrl: 'scripts/home/partials/home.html'
+                }
+            }
+        };
 
 		$stateProvider.state('home.contact', contact);
-	});
+        $stateProvider.state('home.contact.up',up);
+
+    });
 }());

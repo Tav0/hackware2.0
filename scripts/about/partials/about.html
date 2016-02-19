@@ -1,5 +1,49 @@
 <div class="container-fluid">
-	<div class="col-sm-offset-4 col-sm-4 text-center">
-		{{about}}
-	</div>
+    <div class="col-sm-offset-4 col-sm-4 text-center">
+        <!--Back button-->
+        <a ui-sref="home.about.right">
+            <button type="button" class="btn btn-default" aria-label="Back">
+                <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+            </button>
+        </a>
+        <br>
+        <!--The rest-->
+
+        {{about}}
+        <div>
+            <h2>Who are we?</h2>
+            <p>The team currently consists of three individuals.</p>
+            <br>
+            <div>
+                <!-- TODO add a picture of Jeroen here-->
+                <img src="">
+                <br>
+                <h3>Jeroen Goossens</h3>
+                <br>
+                <h6>CEO, developer, and penguin afficionado.</h6>
+            </div>
+            <div>
+                <!-- TODO add a picture of Luis here-->
+                <img src="">
+                <br>
+                <h3>Luis Villavicencio</h3>
+                <br>
+                <h6>CTO, developer, and might have an outstanding warrant.</h6>
+            </div>
+            <div>
+                <!-- TODO add a picture of Scotty here-->
+                <img src="">
+                <br>
+                <h3>Scotty Shaw</h3>
+                <br>
+                <h6>CFO, historian, and dangerous white wannabe-gangster.</h6>
+            </div>
+        </div>
+        <div>
+            <h2>Our mission</h2>
+            <h6>It is HackWare's mission to help the community through education and exceptional service.</h6>
+            <h6>Education through example, service through excellence.</h6>
+        </div>
+
+    </div>
 </div>
