@@ -1,40 +1,45 @@
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-sm-offset-4 col-sm-4 text-center">
-			<a ui-sref="home.faq">
-				<button type="button" class="btn btn-default" aria-label="Faq">
-					<span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
-				</button>
-			</a>
-		</div>
-		<div class="col-sm-12">
-			<div class="col-sm-4 text-center">
-				<a ui-sref="home.about">
-					<button type="button" class="btn btn-default" aria-label="About">
-						<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-					</button>
-				</a>
-			</div>
-			<div class="col-sm-4 text-center">
-				<h2>{{site}}</h2>
-			</div>
-			<div class="col-sm-4 text-center">
-				<a ui-sref="home.inventory">
-					<button type="button" class="btn btn-default" aria-label="Inventory">
-						<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
-					</button>
-				</a>
-			</div>
-		</div>
-		<div class="col-sm-offset-4 col-sm-4 text-center">
-			<a ui-sref="home.contact">
-				<button type="button" class="btn btn-default" aria-label="Contact">
-					<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
-				</button>
-			</a>
-		</div>
-
-	</div>
+<div class="container-fluid" >
+    <div class="row">
+        <!--Header and subtitle text here-->
+        <h2>{{site}}</h2>
+        <h4>{{content}}</h4>
+        <!--navigation menu-->
+        <!--TODO menu background and icon alignment-->
+        <div>
+            <div class="col-sm-offset-4 col-sm-4 text-center">
+                <a ui-sref="home.faq">
+                    <button type="button" class="btn btn-default" aria-label="Faq">
+                        <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+                    </button>
+                </a>
+            </div>
+            <div class="col-sm-12">
+                <div class="col-sm-4 text-center">
+                    <a ui-sref="home.about">
+                        <button type="button" class="btn btn-default" aria-label="About">
+                            <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                        </button>
+                    </a>
+                </div>
+                <div class="col-sm-4 text-center">
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a ui-sref="home.inventory">
+                        <button type="button" class="btn btn-default" aria-label="Inventory">
+                            <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-offset-4 col-sm-4 text-center">
+                <a ui-sref="home.contact">
+                    <button type="button" class="btn btn-default" aria-label="Contact">
+                        <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
     <br>
 
     <div class="col-sm-offset-4 col-sm-4 text-center">
