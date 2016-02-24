@@ -5,6 +5,7 @@
 
 	function homeCtrl($scope){
 		$scope.site = "HackWare";
+		$scope.content = "Hardware for hackers by hackers.";
 
 	}
 }());

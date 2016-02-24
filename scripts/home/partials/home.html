@@ -1,47 +1,55 @@
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-sm-offset-4 col-sm-4 text-center">
-			<a ui-sref="home.faq">
-				<button type="button" class="btn btn-default" aria-label="Faq">
-					<span class="glyphicon glyphicon-flash" aria-hidden="true"></span>
-				</button>
-			</a>
-		</div>
-		<div class="col-sm-12">
-			<div class="col-sm-4 text-center">
-				<a ui-sref="home.about">
-					<button type="button" class="btn btn-default" aria-label="About">
-						<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-					</button>
-				</a>
-			</div>
-			<div class="col-sm-4 text-center">
-				<h2>{{site}}</h2>
-			</div>
-			<div class="col-sm-4 text-center">
-				<a ui-sref="home.inventory">
-					<button type="button" class="btn btn-default" aria-label="Inventory">
-						<span class="glyphicon glyphicon glyphicon-wrench" aria-hidden="true"></span>
-					</button>
-				</a>
-			</div>
-		</div>
-		<div class="col-sm-offset-4 col-sm-4 text-center">
-			<a ui-sref="home.contact">
-				<button type="button" class="btn btn-default" aria-label="Contact">
-					<span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
-				</button>
-			</a>
-		</div>
+<div class="container-fluid" >
+    <div class="row">
+        <!--Header and subtitle text here-->
+        <center>
+            <img src="../../../images/hackware_logo.png">
+            <br>
+            <h4>{{content}}</h4>
+            <br>
+            <!--navigation menu-->
+            <div>
+                <div class="col-sm-offset-4 col-sm-4 text-center">
+                    <a ui-sref="home.faq">
+                        <button class="button" id="faq"><span> FAQ </span> </button>
+                    </a>
+                </div>
+                <div class="col-sm-12">
 
-	</div>
-    <br>
-
-    <div class="col-sm-offset-4 col-sm-4 text-center">
-        <h4>Events</h4>
-        <br>
-        <h6>We will be at these events:</h6>
-        <!--TODO add dynamic list here-->
+                    <div class="col-sm-4 text-center">
+                        <a ui-sref="home.about">
+                            <button class="button" id="about"><span> About </span> </button>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 text-center"></div>
+                    <div class="col-sm-4 text-center">
+                        <a ui-sref="home.inventory">
+                            <button class="button" id="inv"><span> Inventory </span> </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-offset-4 col-sm-4 text-center">
+                    <a ui-sref="home.contact">
+                        <button class="button" id="contact"><span> Contact </span> </button>
+                    </a>
+                </div>
+            </div>
     </div>
-
+    <br>
 </div>
+<style>
+    h2,h4,h6 {
+        color: #2ecc71;
+    }
+    #faq span:after{
+        content: '⇈'; /*⇇⇈⇉⇊ */
+    }
+    #about span:after{
+        content: '⇇'; /*⇇⇈⇉⇊ */
+    }
+    #inv span:after{
+        content: '⇉'; /*⇇⇈⇉⇊ */
+    }
+    #contact span:after{
+        content: '⇊'; /*⇇⇈⇉⇊ or ⇠ ⇡ ⇢ ⇣ */
+    }
+</style>

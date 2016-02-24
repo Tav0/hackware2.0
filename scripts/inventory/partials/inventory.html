@@ -2,20 +2,18 @@
 	<div class="col-sm-offset-4 col-sm-4 text-center">
 		<!--Back button-->
 		<a ui-sref="home.inventory.left">
-			<button type="button" class="btn btn-default" aria-label="Back">
+			<button class="button" aria-label="Back">
 				<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
 			</button>
 		</a>
 		<br>
 		<!--The rest-->
-		<p>We distribute and provide support for 
-			<a class="navLinkHcp" href="{{hcpurl}}" target="_self" ng-click="linkModelFunc(hcpurl)">HackAlliance</a>.
-			<br> Take a look at their inventory to see what they have to offer.
-		</p>
+		<p>We distribute and provide support for <a class="navLinkHcp" href="{{hcpurl}}" target="_self" ng-click="linkModelFunc(hcpurl)">HackAlliance</a>.
+			<br>
+			Take a look at their inventory to see what they have to offer.</p>
 		<br>
-		<a class="navLinkHcp" href="{{hcpurl}}" target="_self" ng-click="linkModelFunc(hcpurl)">
-			<button>HackAlliance</button>
-		</a>
-		<!-- TODO still need to replace the raspberry pi logo with HackAlliance's logo-->
+		<a class="button" href="{{hcpurl}}" target="_self"
+		   ng-click="linkModelFunc(hcpurl)"><img src="/images/hack-alliance-long.png"
+												 style="width:100%;height:100%;"></a>
 	</div>
 </div>

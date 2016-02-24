@@ -1,9 +1,9 @@
 (function() {
 	'use strict';
 	angular.module('inventory').controller('inventoryCtrl', inventoryCtrl);
-	inventoryCtrl.$inject = ['$scope', '$window'];
+	inventoryCtrl.$inject = ['$scope','$window'];
 
-	function inventoryCtrl($scope, $window) {
+	function inventoryCtrl($scope,$window){
 		$scope.inventory = "Inventory";
 
 		$scope.hcpurl = 'http://hackalliance.io';
