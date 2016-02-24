@@ -1,0 +1,56 @@
+{
+    "dev":{
+        "files":[
+            {
+                "expand": true,
+                "flatten": true,
+                "cwd": "<%= yeoman.app %>",
+                "dest": "<%= yeoman.app %>/fonts/bootstrap",
+                "src": [
+                    "libraries/bootstrap-sass/assets/fonts/bootstrap/*.*"
+                ]
+            }
+        ]
+    },
+    "dist": {
+        "files": [
+            {
+                "expand": true,
+                "dot": true,
+                "cwd": "<%= yeoman.app %>",
+                "dest": "<%= yeoman.dist %>",
+                "src": [
+                    "*.{ico,png,txt}",
+                    "*.html",
+                    "scripts/{,**/}*.html",
+                    "scripts/{,**/}*.json",
+                    "images/{,*/}*.{webp}"
+                ]
+            },
+            {
+                "expand": true,
+                "cwd": ".tmp/images",
+                "dest": "<%= yeoman.dist %>/images",
+                "src": ["generated/*"]
+            },
+            {
+                "expand": true,
+                "flatten": true,
+                "cwd": "<%= yeoman.app %>",
+                "dest": "<%= yeoman.dist %>/fonts",
+                "src": [
+                    "fonts/*.*"
+                ]
+            },
+            {
+                "expand": true,
+                "flatten": true,
+                "cwd": "<%= yeoman.app %>",
+                "dest": "<%= yeoman.dist %>/fonts/bootstrap",
+                "src": [
+                    "libraries/bootstrap-sass/assets/fonts/bootstrap/*.*"
+                ]
+            }
+        ]
+    }
+}

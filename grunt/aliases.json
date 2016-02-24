@@ -1,0 +1,29 @@
+{
+	"default": [],
+	"serve": [
+		"copy:dev",
+		"clean:server",
+		"wiredep",
+		"sass",
+		"postcss",
+		"watch"
+	],
+	"build":[
+		"clean:dist",
+		"wiredep",
+		"useminPrepare",
+		"sass",
+		"imagemin",
+		"svgmin",
+		"postcss",
+		"concat",
+		"ngAnnotate",
+		"copy:dist",
+		"cdnify",
+		"cssmin",
+		"uglify",
+		"rev",
+		"usemin",
+		"htmlmin"
+	]
+}

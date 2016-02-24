@@ -1,0 +1,15 @@
+{
+	"html": [
+		"<%= yeoman.dist %>/{,*/}*.html",
+		"<%= yeoman.dist %>/scripts/**/*.html"
+	],
+	"css": [
+		"<%= yeoman.dist %>/styles/{,*/}*.css"
+	],
+	"options": {
+	    "assetsDirs": [
+	    	"<%= yeoman.dist %>",
+	    	"<%= yeoman.dist %>/fonts/bootstrap"
+	    ]
+	}
+}
