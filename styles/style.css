@@ -27,7 +27,12 @@ Credit for the background image goes to Kevin Dooley, as per the Creative Common
 */
 body {
     margin: 0;
-    background-image: url("/images/bg.jpg")
+    background-image:url(/images/mountain.jpg); /*Photo taken by: Dominic Kamp
+        http://www.hdwallpapers.in/walls/swiss_night_sky-wide.jpg
+        */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
 }
 
 article,
