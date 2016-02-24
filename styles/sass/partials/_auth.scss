@@ -1,8 +1,13 @@
 .auth-container {
-    margin-top: 232px;
+	position: absolute;
+	top:      0;
+	left:     0;
+	width:    100%;
+	height:   100%;
+	padding:  40px;
 
-    .auth-msg {
-        color: #C14F4F;
-    }
+	.auth-msg {
+		color: #C14F4F;
+	}
 }
 

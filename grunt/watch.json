@@ -1,0 +1,35 @@
+{
+	"options":{
+		"spawn": false,
+		"interrupt": true,
+		"reload": true,
+		"event": [
+			"added",
+			"deleted",
+			"changed"
+		]
+	},
+	"compass": {
+		"files": [
+			"<%= yeoman.app %>/styles/{,**/*}*.{scss,sass}"
+		],
+		"tasks": [
+			"sass",
+			"postcss"
+		]
+	},
+	"js": {
+		"files": [
+			"<%= yeoman.app %>/scripts/**/*.js",
+			"Gruntfile.js"
+		],
+		"tasks": [
+			"newer:jshint:all"
+		]
+	},
+	"gruntfile": {
+		"files": [
+			"Gruntfile.js"
+		]
+	}
+}			

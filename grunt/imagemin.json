@@ -1,0 +1,12 @@
+{
+    "dist": {
+        "files": [
+            {
+                "expand": true,
+                "cwd": "<%= yeoman.app %>/images",
+                "src": "{,*/}*.{png,jpg,jpeg,gif,mp4,ico}",
+                "dest": "<%= yeoman.dist %>/images"
+            }
+        ]
+    }
+}
