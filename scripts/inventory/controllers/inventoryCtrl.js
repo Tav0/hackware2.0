@@ -1,16 +1,9 @@
 (function() {
 	'use strict';
 	angular.module('inventory').controller('inventoryCtrl', inventoryCtrl);
-	inventoryCtrl.$inject = ['$scope','$window'];
+	inventoryCtrl.$inject = ['$scope'];
 
-	function inventoryCtrl($scope,$window){
+	function inventoryCtrl($scope){
 		$scope.inventory = "Inventory";
-
-		$scope.hcpurl = 'http://hackalliance.io';
-
-		$scope.linkModelFunc = function (url){
-			console.log('link model function');
-            $window.location = url;
-		}
 	}
 }());
