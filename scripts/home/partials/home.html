@@ -1,91 +1,90 @@
-<div class="container-fluid" >
-    <div class="row">
-        <!--Header and subtitle text here-->
-        <center>
-            <img src="../../../images/hackware_logo.png">
-            <br>
-            <h4>{{content}}</h4>
-        </center>
-        <br>
-        <!--navigation menu-->
-        <div>
-            <div class="col-sm-offset-4 col-sm-4 text-center">
-                <a ui-sref="home.faq">
-                    <button class="button" id="faq"><span> FAQ </span> </button>
-                </a>
-            </div>
-            <div class="col-sm-12">
-
-                <div class="col-sm-4 text-center">
-                    <a ui-sref="home.about">
-                        <button class="button" id="about"><span> About </span> </button>
-                    </a>
-                </div>
-                <div class="col-sm-4 text-center"></div>
-                <div class="col-sm-4 text-center">
-                    <a ui-sref="home.inventory">
-                        <button class="button" id="inv"><span> Inventory </span> </button>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-offset-4 col-sm-4 text-center">
-                <a ui-sref="home.contact">
-                    <button class="button" id="contact"><span> Contact </span> </button>
-                </a>
-            </div>
-        </div>
-    </div>
+<div class="container-fluid">
+  <div class="row">
+    <!--Header and subtitle text here-->
+    <center>
+      <img src="../../../images/hackware_new_logo.png">
+      <br>
+      <h4>{{content}}</h4>
+    </center>
     <br>
+    <!--navigation menu-->
+    <div>
+      <div class="col-sm-offset-4 col-sm-4 text-center">
+        <a ui-sref="home.faq">
+          <button class="button" id="faq"><span> FAQ </span> </button>
+        </a>
+      </div>
+      <div class="col-sm-12">
+
+        <div class="col-sm-4 text-center">
+          <a ui-sref="home.about">
+            <button class="button" id="about"><span> About </span> </button>
+          </a>
+        </div>
+        <div class="col-sm-4 text-center"></div>
+        <div class="col-sm-4 text-center">
+          <a ui-sref="home.inventory">
+            <button class="button" id="inv"><span> Inventory </span> </button>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-offset-4 col-sm-4 text-center">
+        <a ui-sref="home.contact">
+          <button class="button" id="contact"><span> Contact </span> </button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br>
 </div>
 <style>
-    h2,
-    h4,
-    h6 {
-        color: #2ecc71;
-    }
-
-
-    .button span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-    }
-
-    .button span:after {
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        transition: 0.5s;
-    }
-
-    .button:hover span {
-        padding-right: 25px;
-    }
-
-    .button:hover span:after {
-        opacity: 1;
-        right: 0;
-    }
-
-    #faq span:after {
-        content: '⇈';
-        /*⇇⇈⇉⇊ */
-    }
-
-    #about span:after {
-        content: '⇇';
-        /*⇇⇈⇉⇊ */
-    }
-
-    #inv span:after {
-        content: '⇉';
-        /*⇇⇈⇉⇊ */
-    }
-
-    #contact span:after {
-        content: '⇊';
-        /*⇇⇈⇉⇊ or ⇠ ⇡ ⇢ ⇣ */
-    }
+  h2,
+  h4,
+  h6 {
+		color: rgb(77, 183, 72);
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  #faq span:after {
+    content: '⇈';
+    /*⇇⇈⇉⇊ */
+  }
+  
+  #about span:after {
+    content: '⇇';
+    /*⇇⇈⇉⇊ */
+  }
+  
+  #inv span:after {
+    content: '⇉';
+    /*⇇⇈⇉⇊ */
+  }
+  
+  #contact span:after {
+    content: '⇊';
+    /*⇇⇈⇉⇊ or ⇠ ⇡ ⇢ ⇣ */
+  }
 </style>
