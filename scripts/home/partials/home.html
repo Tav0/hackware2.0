@@ -11,26 +11,26 @@
     <div>
       <div class="col-sm-offset-4 col-sm-4 text-center">
         <a ui-sref="home.faq">
-          <button class="button" id="faq"><span> FAQ </span> </button>
+          <button class="homebutton" id="faq"><span> FAQ </span> </button>
         </a>
       </div>
       <div class="col-sm-12">
 
         <div class="col-sm-4 text-center">
           <a ui-sref="home.about">
-            <button class="button" id="about"><span> About </span> </button>
+            <button class="homebutton" id="about"><span> About </span> </button>
           </a>
         </div>
         <div class="col-sm-4 text-center"></div>
         <div class="col-sm-4 text-center">
           <a ui-sref="home.inventory">
-            <button class="button" id="inv"><span> Inventory </span> </button>
+            <button class="homebutton" id="inv"><span> Inventory </span> </button>
           </a>
         </div>
       </div>
       <div class="col-sm-offset-4 col-sm-4 text-center">
         <a ui-sref="home.contact">
-          <button class="button" id="contact"><span> Contact </span> </button>
+          <button class="homebutton" id="contact"><span> Contact </span> </button>
         </a>
       </div>
     </div>
@@ -44,14 +44,14 @@
 		color: rgb(77, 183, 72);
   }
   
-  .button span {
+  .homebutton span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
   }
   
-  .button span:after {
+  .homebutton span:after {
     position: absolute;
     opacity: 0;
     top: 0;
@@ -59,11 +59,11 @@
     transition: 0.5s;
   }
   
-  .button:hover span {
+  .homebutton:hover span {
     padding-right: 25px;
   }
   
-  .button:hover span:after {
+  .homebutton:hover span:after {
     opacity: 1;
     right: 0;
   }

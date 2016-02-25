@@ -40,12 +40,30 @@ body {
     color: #ecf0f1;
     text-align: center;
     font-size: 18px;
-    padding: 20px;
-    width: 200px;
+    padding: 16px;
+    width: 190px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
     border: 1px solid #ecf0f1;
+}
+
+.homebutton{
+    
+    display: inline-block;
+    border-radius: 100px;
+    background-color: rgb(77, 183, 72);
+    border: none;
+    color: #ecf0f1;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 190px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border: 1px solid #ecf0f1;
+    
 }
 article,
 aside,
