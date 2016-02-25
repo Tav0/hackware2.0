@@ -6080,14 +6080,14 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "futura-pt", sans-serif;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     color: #FFFFFF;
     margin: 0; }
 
 p, div, input, textarea, select, label, button, .btn-default {
     font-family: "neuzeit-grotesk", sans-serif;
     color: #FFFFFF;
-    font-weight: 100; }
+    font-weight: 300; }
 
 a {
     cursor: pointer; }
@@ -9839,8 +9839,17 @@ table.legend-container .legend-details h5 {
 	* inventory page
 	*/
 #inventory {
-    font-size: 1.5em;
-    margin: 20px;
+    font-size: 0.5em;
+    margin-top: 50px;
+		margin-bottom: 80px;
+}
+
+.background-cover {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.39);
 }
 
 .auth-container {

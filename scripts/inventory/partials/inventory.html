@@ -10,13 +10,20 @@
     </div>
     <br>
     <!--The rest-->
-    <div class="col-sm-12 text-center" id="inventory">
-      <p>We distribute and provide support for HackAlliance.
-        <br> Take a look at their inventory to see what they have to offer.</p>
-      <br>
-    </div>
-    <div class="col-sm-12 text-center">
-      <a class="button" href="{{hcpurl}}" target="_self" ng-click="linkModelFunc(hcpurl)"><img src="/images/hack-alliance-long.png" style="width:100%;height:100%;"></a>
+    <div class=" col-sm-12 text-center">
+      <h2>{{inventory}}</h2>
+      <div class="col-sm-12 text-center" id="inventory">
+        <h5>We distribute and provide support for HackAlliance.
+        <br> Take a look at their inventory to see what they have to offer.</h5>
+        <br>
+      </div>
+      <div class="col-sm-12 text-center">
+        <a class="button" href="{{hcpurl}}" target="_self" ng-click="linkModelFunc(hcpurl)"><img src="/images/hack-alliance-long.png" style="width:100%;height:100%;"></a>
+      </div>
     </div>
   </div>
-</div>
+  <style class="ng-scope">
+    h2 {
+      color: rgb(77, 183, 72);
+    }
+  </style>
