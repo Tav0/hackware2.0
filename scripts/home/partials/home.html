@@ -1,46 +1,37 @@
 <div class="container-fluid">
+  <div id="mainLogo" class="text-center">
+    <img id="mainImg" alt="hackware-logo" src="../../../images/hackware_new_logo.png">
+  </div>
+  <div class="motto-title text-center">
+    <blockquote>
+      {{motto}} 
+			<br>
+			{{bywho}}
+    </blockquote>
+  </div>
   <div class="row">
-    <!--Header and subtitle text here-->
-    <center>
-      <img src="../../../images/hackware_new_logo.png">
-      <br>
-      <h4>{{content}}</h4>
-    </center>
-    <br>
-    <!--navigation menu-->
-    <div>
-      <div class="col-sm-offset-4 col-sm-4 text-center">
-        <a ui-sref="home.faq">
-          <button class="homebutton" id="faq"><span> FAQ </span> </button>
+    <div class="col-sm-offset-4 col-sm-4 text-center">
+      <a ui-sref="home.faq">
+        <button class="homebutton" id="faq"><span> FAQ </span> </button>
+      </a>
+    </div>
+    <div class="col-sm-12">
+      <div class="col-sm-4 text-center">
+        <a ui-sref="home.about">
+          <button class="homebutton" id="about"><span> About </span> </button>
         </a>
       </div>
-      <div class="col-sm-12">
-
-        <div class="col-sm-4 text-center">
-          <a ui-sref="home.about">
-            <button class="homebutton" id="about"><span> About </span> </button>
-          </a>
-        </div>
-        <div class="col-sm-4 text-center"></div>
-        <div class="col-sm-4 text-center">
-          <a ui-sref="home.inventory">
-            <button class="homebutton" id="inv"><span> Inventory </span> </button>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-offset-4 col-sm-4 text-center">
-        <a ui-sref="home.contact">
-          <button class="homebutton" id="contact"><span> Contact </span> </button>
+      <div class="col-sm-4 text-center"></div>
+      <div class="col-sm-4 text-center">
+        <a ui-sref="home.inventory">
+          <button class="homebutton" id="inv"><span> Inventory </span> </button>
         </a>
       </div>
     </div>
+    <div class="col-sm-offset-4 col-sm-4 text-center">
+      <a ui-sref="home.contact">
+        <button class="homebutton" id="contact"><span> Contact </span> </button>
+      </a>
+    </div>
   </div>
-  <br>
 </div>
-<style>
-  h2,
-  h4,
-  h6 {
-		color: rgb(77, 183, 72);
-  }
-</style>
