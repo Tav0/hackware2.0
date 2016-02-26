@@ -46,7 +46,7 @@ p {
 }
 
 #profilePic {
-	border-radius: 25px;
+	border-radius: 50%;
 }
 
 .background-cover {
@@ -165,6 +165,10 @@ display: inline-block;
 	margin-top: 10%;
 }
 
+#contactBackBtn {
+	margin-top: 20%;
+}
+
 @media only screen and (max-width: 414px) {
 	.backBtn {
 		margin-top: 0;
@@ -185,6 +189,20 @@ display: inline-block;
     margin: 5px;
 }
 
+#btnContact {
+    display: inline-block;
+    border-radius: 100px;
+    background-color: rgb(77, 183, 72);
+    border: none;
+    color: #ecf0f1;
+    text-align: center;
+    font-size: 18px;
+    padding: 16px;
+    width: 50%;
+    cursor: pointer;
+    margin: 5px;
+}
+
 @media only screen and (max-width: 380px) {
 	.button {
 		padding: 10px;
@@ -194,8 +212,17 @@ display: inline-block;
 
 @media only screen and (max-width: 414px) {
 	#btnContact {
-		width: 150px;
-		margin: 20px;
+		width: 200px;
+		margin: 40px;
+   display: inline-block;
+    border-radius: 100px;
+    background-color: rgb(77, 183, 72);
+    border: none;
+    color: #ecf0f1;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
 	}
 }
 

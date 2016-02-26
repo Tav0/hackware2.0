@@ -3,32 +3,33 @@
     <h1>{{contact}}</h1>
   </div>
   <div class="content">
-    <div class="row">
-      <div class="col-sm-offset-4 col-sm-4 text-center">
-        <!--facebook-->
-        <a class="navLinkHcp" href="{{facebook}}" target="_self" ng-click="linkModelFunc(facebook)">
-          <button class="button col-sm-12" id="btnContact">Facebook</button>
+      <div class="row">
+        <div class="col-sm-offset-4 col-sm-4 text-center">
+          <!--facebook-->
+          <a class="navLinkHcp" href="{{facebook}}" target="_self" ng-click="linkModelFunc(facebook)">
+            <button id="btnContact">Facebook</button>
+          </a>
+        </div>
+        <div class="col-sm-offset-4 col-sm-4 text-center">
+          <!--Twitter-->
+          <a class="navLinkHcp" href="{{twitter}}" target="_self" ng-click="linkModelFunc1(twitter)">
+            <button id="btnContact">Twitter</button>
+          </a>
+        </div>
+        <div class="col-sm-offset-4 col-sm-4 text-center">
+          <!--Email-->
+          <a class="navLinkHcp" href="{{email}}" target="_self" ng-click="linkModelFunc2(email)">
+            <button id="btnContact">Email</button>
+          </a>
+        </div>
+      </div>
+      <div class="backBtn" id="contactBackBtn">
+        <a ui-sref="home.contact.up">
+          <button type="button" class="button" aria-label="Back">
+            <span class="glyphicon glyphicon-triangle-top"></span>
+          </button>
         </a>
       </div>
-      <div class="col-sm-offset-4 col-sm-4 text-center">
-        <!--Twitter-->
-        <a class="navLinkHcp" href="{{twitter}}" target="_self" ng-click="linkModelFunc1(twitter)">
-          <button class="button col-sm-12" id="btnContact">Twitter</button>
-        </a>
-      </div>
-      <div class="col-sm-offset-4 col-sm-4 text-center">
-        <!--Email-->
-        <a class="navLinkHcp" href="{{email}}" target="_self" ng-click="linkModelFunc2(email)">
-          <button class="button col-sm-12" id="btnContact">Email</button>
-        </a>
-      </div>
-    </div>
-    <div class="backBtn">
-      <a ui-sref="home.contact.up">
-        <button type="button" class="button" aria-label="Back">
-          <span class="glyphicon glyphicon-triangle-top"></span>
-        </button>
-      </a>
     </div>
   </div>
 </div>
